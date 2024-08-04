@@ -1,0 +1,143 @@
+#root {
+  min-width: 800px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.controls {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: end;
+  margin-bottom: 26px;
+  padding: 0 12px;
+}
+
+.field-container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  min-width: 200px;
+}
+
+.field-container-price {
+  display: flex;
+  flex-direction: column;
+  width: calc(50% - 112px);
+  min-width: 200px;
+}
+
+.title {
+  text-align: center;
+}
+
+.button {
+  width: 100px;
+  margin-left: 12px;
+  min-height: 30px;
+  cursor: pointer;
+}
+
+.input-field {
+  box-sizing: border-box;
+  height: 30px;
+}
+
+.record {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: start;
+  align-items: center;
+  width: 100%
+}
+
+.record-text {
+  width: 50%;
+  text-align: start;
+  min-width: 50%;
+}
+
+.record-price {
+  box-sizing: border-box;
+  width: calc(50% - 224px);
+  padding-left: 24px;
+  text-align: start;
+  min-width: 100px;
+}
+
+.price-field {
+  margin-left: 12px;
+  width: calc(100% - 124px) !important;
+}
+
+.price-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+}
+
+
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+.record-list {
+  margin-top: 36px;
+  border: 2px solid gray;
+  border-radius: 10px;
+  padding: 12px;
+}
+
+.filter-field {
+  box-sizing: border-box;
+  padding-left: 12px !important;
+}
